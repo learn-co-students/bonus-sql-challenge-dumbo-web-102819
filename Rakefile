@@ -2,5 +2,6 @@ require_relative 'config/environment'
 
 desc 'starts a console'
 task :console do
-  Pry.start
+  db = DBSeed.db
+  binding.pry
 end
